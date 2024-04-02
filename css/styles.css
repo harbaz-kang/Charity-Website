@@ -1,0 +1,666 @@
+@charset "UTF-8";
+
+/* Google Fonts */
+@font-face {
+    font-family: 'Vollkorn';
+    src: url(../fonts/Vollkorn-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Vogue';
+    src: url(../fonts/Vogue.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Olivera';
+    src: url(../fonts/NixieOne.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Vollkorn'; 
+    color: #333;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+}
+body h1, h2, h3, h4, h5, h6{
+    font-family: 'Olivera';
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.button {
+    border: 1px transparent solid;
+    border-radius: 10px;
+    width: 90px;
+    height: 30px;
+    padding: 10px 20px;
+    background: #333333;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+    color: #f4f4f4;
+    letter-spacing: 2px;
+    font-family: 'Vogue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+/* Header Styles */
+header {
+    font-family: 'Vogue';
+    padding: 20px 100px 20px 10px;
+    letter-spacing: 2px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #f8f8f8;
+    background-color: #333;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    margin: 0 30px;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.menu ul li {
+    margin-right: 50px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #f8f8f8;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: #f4f4f4;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    text-decoration: underline;
+    transition: all 0.3s;
+}
+
+.donate-button{
+    border: 1px transparent solid;
+    border-radius: 10px;
+    width: 90px;
+    height: 30px;
+    padding: 10px 20px;
+    background: #ec870b;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+    color: #f4f4f4;
+    letter-spacing: 2px;
+    font-family: 'Vogue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.donate-button:hover {
+    background-color: #ec740b;
+}
+
+/* Footer Styles */
+footer {
+    font-family: 'Vogue';
+    background-color: #333;
+    color: #f8f8f8;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-logo,
+.footer-info,
+.footer-connect {
+    flex: 1;
+    text-align: left;
+    margin: 0 50px;
+}
+
+.wwf-logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+.footer-info {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    align-items: center;
+    justify-content: left;
+}
+
+.footer-info ul{
+    list-style-type: none;
+}
+
+.footer-info ul li a {
+    padding: 5px;
+    color: #f8f8f8;
+    margin: 0 70px 0 0;
+    text-decoration: none;
+}
+
+.footer-connect {
+    text-align: left;
+    color: #f8f8f8;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 30px;
+    max-width: 300px;
+    margin-top: 20px;
+}
+
+.icons i {
+    font-size: 30px;
+    margin: 7px 10px 0 0;
+}
+
+.copyright {
+    margin: 25px 0 0 0;
+    font-size: 12px;
+}
+
+
+/* index.html */
+.index-hero {
+    background: url('../images/index-background.jpg');
+    background-size: cover;
+    color: #ffffff;
+    padding: 150px 0;
+    text-align: left;
+}
+
+.index-hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.wwf {
+    display: block;
+    font-size: 40px;
+    color: #fff;
+    text-shadow: 0 0 15px #000;
+}
+
+.index-hero p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.featured-projects {
+    text-align: center;
+    flex-wrap: wrap;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.featured-projects h2 {
+    margin-top: 20px;
+    padding: 50px 0 20px 0;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.featured-projects .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.index-project {
+    margin: 0 0 40px 27px;
+    transition: all 0.3s;
+}
+
+.featured-projects .container {
+    margin: 0;
+    padding: 0;
+}
+
+.index-project img {
+    width: auto;
+    height: 300px;
+    margin: 0 0 0 10px;
+}
+
+.index-project h3 {
+    margin-top: 20px;
+}
+
+.index-project p {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.index-project a {
+    text-decoration: none;
+    color: #333;
+}
+
+.index-project:hover {
+    transform: scale(1.1);
+}
+
+/* about.html */
+.about-hero {
+    background: url('../images/about-background.jpg');
+    background-size: cover;
+    color: #fff;
+    padding: 150px 0;
+    text-align: right;
+}
+
+.about-hero .container {
+    width: 490px;
+    text-align: right;
+    margin-right: 10px;
+    flex-wrap: wrap;
+}
+
+.about-hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.wwf {
+    display: block;
+    font-size: 40px;
+    color: #fff;
+    text-shadow: 0 0 15px #000;
+}
+
+.about-hero p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.section-box h3 {
+    margin-top: 50px;
+    font-size: 35px;
+}
+
+.section-box p {
+    font-size: 17px;
+    padding: 20px;
+    color: #333;
+}
+
+.section-box ul {
+    padding: 0 50px;
+}
+
+.who-we-are-img {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 10px 0 0 30px;
+    flex-wrap: wrap;
+}
+
+.who-we-are-img img {
+    border-radius: 40px;
+    border: 2px solid black;
+}
+
+.section-box blockquote {
+    font-weight: 600;
+    font-size: 20px;
+    padding: 50px;
+}
+
+.section-box blockquote cite {
+    font-weight: 500;
+    font-size: 1.7vh;
+    color: #191970;
+}
+
+.team-members{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.team-members ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 10px 0 0 30px;
+    flex-wrap: wrap;
+}
+
+.team-members ul li{
+    list-style-type: none;
+}
+
+
+/* contact.html */
+.contact-container {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.google-map {
+    width: 40%;
+    margin: 20px 50px 20px 130px;
+    border: 2px solid rgb(81, 75, 75);
+    border-radius: 10px;
+}
+
+.google-map iframe {
+    height: 650px;
+    border: 0;
+    border-radius: 10px;
+}
+
+.feedback-form {
+    width: 80%;
+    margin: 20px 50px 20px 0px;
+    padding: 100px;
+    box-shadow: 1px 4px 10px 1px #aaa;
+    font-family: sans-serif;
+    background: radial-gradient(circle, #373636, #0d0606);
+    border-radius: 10px;
+    color: #f4f4f4;
+}
+
+.feedback-form {
+    box-sizing: border-box;
+}
+
+.feedback-form h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-family: Poppins;
+    text-transform: uppercase;
+}
+
+.feedback-form input {
+    margin-bottom: 15px;
+    font-family: Poppins;
+}
+
+.feedback-form input[type="text"],
+textarea {
+    display: block;
+    height: 32px;
+    padding: 6px 16px;
+    width: 100%;
+    border: none;
+    background-color: #f3f3f3;
+    font-family: Poppins;
+    border-radius: 5px;
+}
+
+.feedback-form textarea {
+    height: 60px;
+}
+
+.feedback-form h4,p {
+    font-size: 0.8em;
+    font-family: 'Vollkorn';
+}
+
+.feedback-form label {
+    color: #f4f4f4;
+    font-size: 0.8em;
+    font-family: Poppins;
+}
+
+.feedback-form input[type="checkbox"] {
+    float: left;
+    margin: 8px 5px 0 0;
+}
+
+.feedback-form button {
+    font-family: 'Vogue';
+    display: block;
+    margin: 20px auto 0;
+    width: 150px;
+    height: 40px;
+    border-radius: 25px;
+    border: none;
+    color: #eee;
+    font-weight: 700;
+    letter-spacing: 2px;
+    background: #0d4f8a;
+    transition: background-color 0.3s;
+}
+
+.feedback-form button:hover {
+    background-color: #3d6bae;
+}
+
+/* projects.html */
+.projects {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+.projects .container {
+    text-align: center;
+}
+
+.projects h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 300px;
+    margin: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+}
+
+.card img {
+    height: 500px;
+    width: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    color: #666;
+}
+
+.card {
+    position: relative;
+    text-align: center;
+}
+
+.card img {
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+.card-content {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card-content a {
+    display: inline-block;
+    padding: 25px;
+    width: 150px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card:hover img {
+    opacity: 0.3;
+}
+
+.card:hover .card-content {
+    display: block;
+}
+
+/* Donate.html */
+#donation-div {
+    width: 45%;
+    margin: 0 auto;
+    padding: 100px;
+    box-shadow: 1px 4px 10px 1px #aaa;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: url(../images/donate.jpg);
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.donation-form {
+    margin-top: 20px;       
+}
+
+#donation-div * {
+    box-sizing: border-box;
+}
+
+#donation-div h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: whitesmoke;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+#donation-div input {
+    margin-bottom: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#donation-div input[type="text"],[type="number"],textarea {
+    display: block;
+    height: 32px;
+    padding: 6px 16px;
+    width: 100%;
+    border: none;
+    background-color: whitesmoke;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 5px;
+}
+
+#donation-div textarea {
+    height: 60px;
+}
+
+#donation-div h4,
+p {
+    font-size: 0.8em;
+    color: whitesmoke;
+}
+
+#donation-div label {
+    color: whitesmoke;
+    font-size: 0.8em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#donation-div input[type="checkbox"] {
+    float: left;
+    margin: 8px 5px 0 0;
+}
+
+#donation-div button {
+    display: block;
+    margin: 20px auto 0;
+    width: 150px;
+    height: 40px;
+    border-radius: 25px;
+    border: none;
+    color: #eee;
+    font-weight: 700;
+    background: #333;
+    transition: background-color 0.3s;
+}
+
+#donation-div button:hover {
+    background-color: #228B22;
+}

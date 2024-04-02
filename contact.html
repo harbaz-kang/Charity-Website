@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Wildlife Fund</title>
+    <script src="https://kit.fontawesome.com/ffe6622405.js" crossorigin="anonymous"></script>
+    <!-- Linking css -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- Adding favicon -->
+    <link rel="shortcut icon" href="./images/logo.svg">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <img src="./images/logo.svg" alt="WWF Logo" class="logo">
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <a href="donate.html" class="donate-button">Donate</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <div class="contact-container">
+            <div class="google-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6209.529866307995!2d-77.05416652425048!3d38.90649047172207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b7b5c36d1c95%3A0xff51d6e5014d95c!2sWorld%20Wildlife%20Fund!5e0!3m2!1sen!2sca!4v1712064006114!5m2!1sen!2sca"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <section class="contact-form">
+                <div class="feedback-form">
+                    <h2 class="header">Contact Us</h2>
+                    <!-- Contact Form -->
+                    <div>
+                        <form id="contactForm">
+                            <!-- Name box -->
+                            <input type="text" name="name" id="name" placeholder="Name" required>
+                            <!-- Email box -->
+                            <input type="text" name="email" id="email" placeholder="Email" required>
+                            <!-- Zipcode -->
+                            <input type="text" name="zipcode" id="zipcode" placeholder="Zipcode">
+                            <!-- Message -->
+                            <textarea name="Message" id="message" placeholder="Message" required></textarea>
+                            <!-- Check box and label -->
+                            <br>
+                            <p>Be a part of our community</p>
+                            <p>We’ll send you conservation news and updates on how you can protect nature through
+                                activism,
+                                donating, events, and more. You can unsubscribe at any time.</p>
+                            <label for="feedback-notify">Remind me via E-mail</label>
+                            <input type="checkbox" id="feedback-notify" name="notify">
+                            <br>
+                            <!-- Button for submission -->
+                            <button type="submit">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <!-- Footer container -->
+        <div class="footer-container">
+
+            <!-- Division for logo -->
+            <div class="footer-logo">
+                <img src="images/logo.svg" alt="WWF Logo" class="wwf-logo">
+                <p>1250 24th Street, N.W.<br>
+                    Washington, DC 20037</p>
+            </div>
+
+            <!-- Division for contact info -->
+            <div class="footer-info" id="footer-info">
+                <ul>
+                    <li><a href="#">Site Terms</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">State Disclosures</a></li>
+                </ul>
+            </div>
+            <!-- Icons -->
+            <div class="footer-connect" id="footer-contact">
+                <p>Connect with us</p>
+                <div class="icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <h4 class="copyright">© 2024 World Wildlife Fund. WWF® and ©1986 Panda Symbol are owned by WWF. All rights
+            reserved.</h4>
+    </footer>
+</body>
+
+</html>
